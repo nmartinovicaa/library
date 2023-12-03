@@ -3,6 +3,7 @@ body {
     background-color: #D9D9D9;
     display: flex;
     justify-content: center;
+    font-family: 'Open Sans' , serif;
 }
 
 .container {
@@ -21,7 +22,7 @@ body {
     align-items: center;
     color: white;
     font-size: 48px;
-    font-family: 'Open Sans' , serif;
+
 }
 
 .box {
@@ -52,6 +53,10 @@ body {
     justify-content: space-between;
 }
 
+.book-details {
+    text-align: center;
+}
+
 .book {
     height: 250px;
     width: calc(100vw/4 - 29px);
@@ -59,4 +64,24 @@ body {
     border: 4px solid #004AAD;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
+
+
+.minus {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    height: 10%;
+    width: 10%;
+    font-size: 32px;
+    font-weight: bold;
+    align-items: center;
+    padding-right: 8px;
+}
+
+::backdrop {
+    background-color: black;
+    opacity: 0.6;
+  }
