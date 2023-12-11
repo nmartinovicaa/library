@@ -50,7 +50,7 @@ body {
     flex-wrap: wrap;
     padding: 8px;
     gap: 8px;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .book-details {
@@ -59,8 +59,8 @@ body {
 }
 
 .book {
-    height: minmax(100%,100vw/6 - 29px);
-    width: calc(100vw/6 - 29px);
+    height: calc((100vw/6 - 29px)/2);
+    width: calc(100vw/6 - 32px);
     background-color: white;
     border: 4px solid #004AAD;
     display: flex;
@@ -68,6 +68,13 @@ body {
     align-items: center;
 }
 
+.book-even {
+    background-color: white;
+}
+
+.book-odd {
+    background: wheat;
+}
 
 
 .minus {
@@ -85,4 +92,8 @@ body {
 ::backdrop {
     background-color: black;
     opacity: 0.6;
+  }
+
+  .minus:hover {
+    color: red
   }
