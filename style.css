@@ -55,17 +55,28 @@ body {
 
 .book-details {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+
+}
+
+.book-details > h2 {
+    height: 50%;
 
 }
 
 .book {
-    height: calc((100vw/6 - 29px)/2);
+    /* height: calc((100vw/6 - 29px)/2); */
     width: calc(100vw/6 - 32px);
     background-color: white;
     border: 4px solid #004AAD;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+
 }
 
 .book-even {
@@ -96,4 +107,9 @@ body {
 
   .minus:hover {
     color: red
+  }
+
+  .form-submit {
+    display: flex;
+    flex-direction: column;
   }

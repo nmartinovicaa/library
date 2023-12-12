@@ -40,12 +40,14 @@ closeButton.addEventListener("click", () => {
 
 const modalSubmit = document.querySelector('.form-submit')
 modalSubmit.addEventListener('submit', (event) => {
-  event.preventDefault()
+
   const data = new FormData(event.target);
   let bookObject = (Object.fromEntries(data.entries()))
   addBookToLibrary(new Book(bookObject.title, bookObject.author,bookObject.pages,bookObject.read))
   addBooksToPage()
   dialog.close()
+  document.getElementById("addBook").reset();
+  return event.preventDefault()
 })
 
 function addBooksToPage() {

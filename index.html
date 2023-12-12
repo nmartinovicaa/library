@@ -41,18 +41,28 @@
         <dialog>
             <button class='close' autofocus>Close</button>
             <form id="addBook"class="form-submit">
+                <div class="title">
                 <label for="title">Title: </label>
+
                 <input type="text" id="title" name="title" required>
+            </div>
+            <div class="author">
                 <label for="author">Author: </label>
-                <input type="text" id="author" name="author">
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div class="pages">
                 <label for="pages">Pages: </label>
-                <input type="number" id="pages" name="pages">
+                <input type="number" id="pages" name="pages" required>
+            </div>
                 <legend>Book Read?</legend>
-                <input type="radio" name="read" value="true" id="yes">
+                <div>
+                <input type="radio" name="read" value="true" id="yes" required>
                 <label for="yes">Yes</label>
+            </div>
+            <div>
                 <input type="radio" name="read" value="false" id="no">
                 <label for="no">No</label>
-
+            </div>
                 <button form="addBook" type="submit" class="modal-submit">Click</button>
             </form>
 
