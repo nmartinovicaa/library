@@ -113,3 +113,17 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  .form-submit > * {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+  }
+
+  .radio {
+    justify-content: flex-start;
+  }
+
+  .form-submit > button {
+    max-width: fit-content;
+  }
